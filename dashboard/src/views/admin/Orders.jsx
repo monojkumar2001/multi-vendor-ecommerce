@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Pagination from "../Pagination";
 const Orders = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [searchValue, setSearchValue] = useState(1);
+  // const [searchValue, setSearchValue] = useState(1);
   const [parPage, setParPage] = useState(5);
   const [show, setShow] = useState(false);
 
@@ -47,7 +47,7 @@ const Orders = () => {
                 <div className="py-4 w-[18%]">pending</div>
                 <div className="py-4 w-[18%]">pending</div>
                 <div className="py-4 w-[18%]">
-                  <Link>View</Link>
+                  <Link to='/admin/dashboard/order/details/1'>View</Link>
                 </div>
                 <div
                   onClick={() => setShow(!show)}

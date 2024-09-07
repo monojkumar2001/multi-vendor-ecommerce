@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Pagination from "../Pagination";
-import { FaEdit, FaEye, FaTrash } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Pagination from "../Pagination";
+import { FaEye } from "react-icons/fa";
 
-const Sellers = () => {
-  const [parPage, setParPage] = useState(5);
+const SellerRequest = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchValue, setSearchValue] = useState(1);
+  const [parPage, setParPage] = useState(5);
   const [show, setShow] = useState(false);
   return (
     <div className=" px-2 lg:px-7 pt-5">
@@ -34,25 +34,16 @@ const Sellers = () => {
                   No
                 </th>
                 <th scope="col" className="py-3 px-4 whitespace-nowrap">
-                  Image
-                </th>
-                <th scope="col" className="py-3 px-4 whitespace-nowrap">
                   Name
                 </th>
                 <th scope="col" className="py-3 px-4 whitespace-nowrap">
                   Email
                 </th>
                 <th scope="col" className="py-3 px-4 whitespace-nowrap">
-                  Shop Name
-                </th>
-                <th scope="col" className="py-3 px-4 whitespace-nowrap">
                   Payment Status
                 </th>
                 <th scope="col" className="py-3 px-4 whitespace-nowrap">
-                  Division
-                </th>
-                <th scope="col" className="py-3 px-4 whitespace-nowrap">
-                  District
+                  Status
                 </th>
                 <th scope="col" className="py-3 px-4 whitespace-nowrap">
                   Action
@@ -66,36 +57,20 @@ const Sellers = () => {
                     {item}
                   </td>
                   <td className="py-2 px-4 font-normal whitespace-nowrap">
-                    <img
-                      className="w-[45px] h-[45px]"
-                      src="/images/1.jpg"
-                      alt=""
-                    />
-                  </td>
-                  <td className="py-2 px-4 font-normal whitespace-nowrap">
                     Monoj kumar
                   </td>
                   <td className="py-2 px-4 font-normal whitespace-nowrap">
                     monoj@gmail.com
                   </td>
                   <td className="py-2 px-4 font-normal whitespace-nowrap">
-                    Monoj Shop
+                    inactive
                   </td>
                   <td className="py-2 px-4 font-normal whitespace-nowrap">
-                    Pending
-                  </td>
-                  <td className="py-2 px-4 font-normal whitespace-nowrap">
-                    Rangpur
-                  </td>
-                  <td className="py-2 px-4 font-normal whitespace-nowrap">
-                    Dinajpur
+                    pending
                   </td>
                   <td className="py-2 px-4 font-normal whitespace-nowrap">
                     <div className="flex justify-start items-center gap-4">
-                      <Link
-                        to="/admin/dashboard/seller/details/1"
-                        className=" p-[6px] bg-green-500 hover:shadow-lg hover:bg-green-500/50"
-                      >
+                      <Link className=" p-[6px] bg-green-500 hover:shadow-lg hover:bg-green-500/50">
                         <FaEye />
                       </Link>
                     </div>
@@ -119,4 +94,4 @@ const Sellers = () => {
   );
 };
 
-export default Sellers;
+export default SellerRequest;

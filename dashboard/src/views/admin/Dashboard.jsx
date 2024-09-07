@@ -234,19 +234,19 @@ const Dashboard = () => {
               <table className="w-full text-sm text-left text-primary ">
                 <thead className="text-sm text-primary uppercase border-b border-slate-700">
                   <tr>
-                    <th scope="col" className="py-3 px-4">
+                    <th scope="col" className="py-3 px-4 whitespace-nowrap">
                       Order Id
                     </th>
-                    <th scope="col" className="py-3 px-4">
+                    <th scope="col" className="py-3 px-4 whitespace-nowrap">
                       Price
                     </th>
-                    <th scope="col" className="py-3 px-4">
+                    <th scope="col" className="py-3 px-4 whitespace-nowrap">
                       Payment Status
                     </th>
-                    <th scope="col" className="py-3 px-4">
+                    <th scope="col" className="py-3 px-4 whitespace-nowrap">
                       Order Status
                     </th>
-                    <th scope="col" className="py-3 px-4">
+                    <th scope="col" className="py-3 px-4 whitespace-nowrap">
                       Action
                     </th>
                   </tr>
