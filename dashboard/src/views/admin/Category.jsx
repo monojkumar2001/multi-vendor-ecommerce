@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 import Pagination from "../Pagination";
 import { BsImage } from "react-icons/bs";
 import { GrClose } from "react-icons/gr";
+import Search from "../components/Search";
 
 const Category = () => {
   const [parPage, setParPage] = useState(5);
   const [currentPage, setCurrentPage] = useState(1);
-  const [searchValue, setSearchValue] = useState(1);
+  const [searchValue, setSearchValue] = useState('');
   const [show, setShow] = useState(false);
   return (
     <div className=" px-2 lg:px-7 pt-5">
@@ -24,21 +25,7 @@ const Category = () => {
       <div className="flex flex-wrap w-full">
         <div className="w-full lg:w-7/12 lg:pr-3 ">
           <div className="w-full bg-[#283046] p-4 rounded-md ">
-            <div className="flex justify-between items-center ">
-              <select
-                onChange={(e) => setParPage(parseInt(e.target.value))}
-                className="px-4 py-3 focus:border-indigo-500 outline-none bg-[#283046] border border-slate-700 rounded-md text-primary"
-              >
-                <option value="5">5</option>
-                <option value="5">15</option>
-                <option value="5">25</option>
-              </select>
-              <input
-                className="px-4 py-3 focus:border-indigo-500 outline-none bg-[#283046] border border-slate-700 rounded-md text-primary"
-                type="text"
-                placeholder="Search..."
-              />
-            </div>
+            <Search setParPage={setParPage} />
             <div className=" relative overflow-x-auto ">
               <table className="w-full text-sm text-left text-primary ">
                 <thead className="text-sm text-primary uppercase border-b border-slate-700">

@@ -5,7 +5,7 @@ import { FaUsers } from "react-icons/fa";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import Chart from "react-apexcharts";
-const Dashboard = () => {
+const AdminDashboard = () => {
     const state = {
         series: [
           {
@@ -279,4 +279,4 @@ const Dashboard = () => {
       );
 }
 
-export default Dashboard
+export default AdminDashboard

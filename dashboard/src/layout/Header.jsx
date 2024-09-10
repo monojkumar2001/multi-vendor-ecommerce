@@ -17,7 +17,7 @@ const Header = ({ showSidebar, setShowSidebar }) => {
           <input
             type="text"
             name="search"
-            className="px-3 w-[300px] py-2 outline-none border bg-transparent border-indigo-700 text-[#d0d2d6] focus:border-indigo-500"
+            className="px-3 w-[300px] py-2 outline-none border bg-transparent border-slate-700 text-[#d0d2d6] focus:border-indigo-500"
             placeholder="search..."
           />
         </div>
